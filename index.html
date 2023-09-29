@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Digimon</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="assets/css/digimon-all-star-rumble-logo.jpg" alt="" width="58" height="43" class="d-inline-block align-text-top"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="api" aria-current="page" target="_blank" href="https://digimon-api.vercel.app/">API Digimon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="link2" href="#form1">Buscar</a>
+          </li>
+          <li class="nav-item">
+            <div>
+            <a class="nav-link active" id="link1"  href="#displis">Display Lista</a>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <!--Jumbotron  -->
+          <div class="jumbotron">    
+          <h1 id="titulojum" class="display-2"> <img src="assets/img/Digimon_Logo.svg" alt="" srcset=""></h1>
+          <p class="lead"> Explora el mundo Digimon a traves de nuestro buscador, o revisa la lista completa de los digimones disponibles más abajo!</p>
+          <br>
+        </div>
+      </div>
+    <div class="col">
+      <img id="gatomon" src="assets/img/gatomon.jpeg" alt="gatomon">
+  </div>
+  <div class="row">
+    <div class="col">
+  <!-- Tarjeta para el form -->
+      <div id="form1" class="card" style="width: 32rem;">
+        <div class="card-body">
+          <h5 id="find" class="card-title"><b> Encuentra un Digimon </b></h5>
+          <form>   
+          <p class="card-text">Puedes utilizar el buscador para encontrar un solo digimon y ver su imagen a tu derecha, intentalo! </p>
+          <input type="text" id="busqueda">
+          <button id="buscar" class="btn btn-primary">Buscar</button>
+        </form>
+        </div>
+      </div>
+    </div>  
+    <div id="flecha" class="col-md-auto"> 
+      <img src="assets/img/flecha.jpeg" alt="flecha" style="width: 7rem;">
+    </div>
+      <!-- Tarjeta un solo Digimon -->
+    <div id="tarjetauno" class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/tanemon.jpg" class="card-img-top imgtjta" alt="digimon">
+        <div class="card-body">
+          <h5 id="c-title" class="card-title">Tanemon</h5>
+          <p id="c-text" class="card-text">In Training</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col jumbotron">
+          <p class="lead"> La saga de Digimon comenzó en 1997 gracias a los Virtual Pet, o V-Pet, unos Tamagotchi en los que no solo se cuidaba a las mascotas, también se combatía. Como método publicitario y para expandir la franquicia, surgió Digimon Adventure, un anime de 54 episodios que los catapultó al éxito... </p>
+        </div>
+      </div>
+    </div> 
+  <div class="container">
+    <div class="row">      
+  
+  <!-- Tarjeta con fetch un solo digimon igual que arriba -->
+  <div class="col jumbotron">
+    <h3 id="displis">Lista</h3>
+    <table class="table table-responsive table-dark table-borderless">
+      <thead>
+        <tr>         
+          <th scope="col-sm-2">Imagen</th>
+          <th scope="col-sm-2">Digimon</th>
+          <th scope="col-sm-2">Nivel</th>
+        </tr>
+      </thead>
+      <tbody id="tabla" >
+        <tr >        
+          <td> <img src="assets/img/tanemon.jpg" id="small-img" class="card-img-top imgtable" alt="digimon-api"></td>
+          <td class="td-text">Tanemon</td>
+          <td>Training</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    </div>      
+  </div>
+</div>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+    </script>
+  <script src="assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>
